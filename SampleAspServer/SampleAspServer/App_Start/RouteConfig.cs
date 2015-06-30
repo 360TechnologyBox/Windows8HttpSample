@@ -14,8 +14,8 @@ namespace SampleAspServer
             settings.AutoRedirectMode = RedirectMode.Permanent;
             routes.EnableFriendlyUrls(settings);
 
-
             routes.Add(new Route("message/send", new SampleAspServer.Handlers.MessageRouteHandler()));
+            routes.Add(new Route("message/list", new SampleAspServer.Handlers.ListRouteHandler()));
         }
     }
 }

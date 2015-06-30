@@ -134,6 +134,7 @@
       <DependentUpon>ChatAppDB.edmx</DependentUpon>
       <LastGenOutput>ChatAppDB.cs</LastGenOutput>
     </Content>
+    <Content Include="Handlers\List.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -208,6 +209,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\List.ashx.cs">
+      <DependentUpon>List.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\ListRouteHandler.cs" />
     <Compile Include="Handlers\Message.ashx.cs">
       <DependentUpon>Message.ashx</DependentUpon>
     </Compile>
