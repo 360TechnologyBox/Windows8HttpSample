@@ -16,6 +16,7 @@ namespace SampleAspServer
 
             routes.Add(new Route("message/send", new SampleAspServer.Handlers.MessageRouteHandler()));
             routes.Add(new Route("message/list", new SampleAspServer.Handlers.ListRouteHandler()));
+            routes.Add(new Route("image/upload", new SampleAspServer.Handlers.ImageUploadRouteHandler()));
         }
     }
 }

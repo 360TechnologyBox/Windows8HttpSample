@@ -104,6 +104,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Uploads\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
@@ -135,6 +136,7 @@
       <LastGenOutput>ChatAppDB.cs</LastGenOutput>
     </Content>
     <Content Include="Handlers\List.ashx" />
+    <Content Include="Handlers\ImageUpload.ashx" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -209,6 +211,10 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Handlers\ImageUpload.ashx.cs">
+      <DependentUpon>ImageUpload.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\ImageUploadRouteHandler.cs" />
     <Compile Include="Handlers\List.ashx.cs">
       <DependentUpon>List.ashx</DependentUpon>
     </Compile>
